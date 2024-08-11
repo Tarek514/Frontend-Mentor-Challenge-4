@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  color: hsl(24, 5%, 18%);
+  font-family: "Young Serif", serif;
+  font-style: normal;
+}
+
+.image-placeholder {
+  border-radius: 10px;
+  height: 300px;
+  background: url("/assets/images/image-omelette.jpeg") no-repeat center
+    center/cover;
+}
+
+.wrapper {
+  background: #fff;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 690px;
+  padding: 40px;
+}
+
+.centered-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Preparation {
+  background: hsl(330, 100%, 98%);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.Preparation li,
+li {
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.Preparation ul,
+ul,
+ol {
+  padding: 0 20px;
+}
+
+ul li {
+  color: hsl(24, 5%, 18%);
+}
+
+.Preparation ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.Preparation h3 {
+  font-weight: 600;
+  padding-bottom: 20px;
+  color: hsl(332, 51%, 32%);
+}
+
+.highlight {
+  font-weight: 600;
+  color: hsl(30, 10%, 34%);
+}
+
+h1 {
+  padding: 20px 0;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+header p {
+  padding-bottom: 40px;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+}
+
+h2 {
+  padding: 20px 0;
+  color: hsl(14, 45%, 36%);
+}
+
+ul li::marker,
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.Ingredients {
+  padding-bottom: 30px;
+}
+
+#Instructions li {
+  line-height: 1.5;
+  color: hsl(30, 10%, 34%);
+  padding-bottom: 10px;
+}
+
+#Instructions {
+  padding-bottom: 30px;
+  border-bottom: hsl(30, 18%, 87%) 1px solid;
+  border-top: hsl(30, 18%, 87%) 1px solid;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.nutrition-grid div:nth-of-type(even) {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+.grid-header,
+.grid-value {
+  position: relative;
+  padding: 15px 0 15px 20px;
+  color: hsl(30, 10%, 34%);
+}
+
+.grid-header::after,
+.grid-value::after {
+  content: "";
+  position: absolute;
+  background-color: hsl(30, 18%, 87%);
+  z-index: 1;
+}
+
+.grid-header::after,
+.grid-value::after {
+  width: 100vw;
+  height: 1px;
+  left: 0;
+  top: -1px;
+}
+
+.Nutrition p {
+  padding-bottom: 25px;
+  color: hsl(30, 10%, 34%);
+}
+
+@media screen and (max-width: 450px) {
+  .centered-page .wrapper {
+    max-width: 340px;
+  }
+  .centered-page .wrapper h1 {
+    font-size: 30px;
+  }
+}

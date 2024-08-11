@@ -20,11 +20,11 @@ h2 {
   font-style: normal;
 }
 
-.image-placeholder {
+.omelette-image {
   border-radius: 10px;
   height: 300px;
-  background: url("/assets/images/image-omelette.jpeg") no-repeat center
-    center/cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .wrapper {
